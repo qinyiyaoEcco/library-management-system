@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./h2
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  main:
+    banner-mode: off
+    log-startup-info: false
+logging:
+  level:
+    root: off
+    lab28.group4.asm2: info

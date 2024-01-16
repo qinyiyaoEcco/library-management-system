@@ -1,0 +1,7 @@
+CREATE TABLE audit_logs
+(
+    id         BIGINT AUTO_INCREMENT PRIMARY KEY,
+    user_id    BIGINT REFERENCES users (id) ON DELETE SET NULL,
+    action     TEXT   NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
